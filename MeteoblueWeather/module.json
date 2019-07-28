@@ -1,0 +1,11 @@
+{
+    "id": "{5FC2A1BD-1D3B-F727-3981-C498599C998D}",
+    "name": "SymconMeteoblue",
+    "type": 3,
+    "vendor": "Meteoblue",
+    "aliases":["Meteoblue weather"],
+    "parentRequirements": [],
+    "childRequirements": [],
+    "implemented": [],
+    "prefix": "MBW"
+}

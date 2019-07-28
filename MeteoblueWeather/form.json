@@ -1,0 +1,54 @@
+{
+  "elements":
+  [
+    { "type": "ValidationTextBox", "name": "MBW_APIKEY", "caption": "API Key" },
+    { "type": "ValidationTextBox", "name": "MBW_LATITUDE", "caption": "Latitude" },
+    { "type": "ValidationTextBox", "name": "MBW_LONGITUDE", "caption": "Longitude" },
+    { "type": "ValidationTextBox", "name": "MBW_ASL", "caption": "ASL Code" },
+    { "type": "ValidationTextBox", "name": "MBW_DATE_FORMAT", "caption": "Date format" },
+    { "type": "ValidationTextBox", "name": "MBW_IMAGE_WIDTH", "caption": "Image Width" },
+    { "type": "ValidationTextBox", "name": "MBW_IMAGE_HEIGHT", "caption": "Image Height" },
+      
+    { "type": "IntervalBox", "name": "MBW_UPDATEINTERVALL", "caption": "Updateintervall" },
+    
+    { "type": "Select", "name": "MBW_TEMPERATURE", "caption": "Temperature",
+		"options": [
+			{ "label": "Celsius", "value":"C" },
+			{ "label": "Fahrenheit", "value":"F" }
+		]
+	},
+	{ "type": "Select", "name": "MBW_FORECASTDAYS", "caption": "Forecast Days",
+		"options": [
+			{ "label": "Only Today", "value":"0" },
+			{ "label": "Today + Tomorrow", "value":"1" },
+			{ "label": "3 Days", "value":"2" },
+            { "label": "4 Days", "value":"3" },
+            { "label": "5 Days", "value":"4" },
+            { "label": "6 Days", "value":"5" }
+		]
+	},
+    { "type": "Select", "name": "MBW_FORECASTPRECISION", "caption": "Forecast Precision",
+		"options": [
+			{ "label": "0", "value":"0" },
+			{ "label": "1", "value":"1" },
+			{ "label": "2", "value":"2" }
+		]
+	},
+    { "type": "IntervalBox", "name": "MBW_FONTSIZE", "caption": "Fontsize" },
+    { "type": "CheckBox", "name": "MBW_DEBUG", "caption": "Activate Debug-Logging" }
+  ], 
+  "actions":
+  [
+
+    { "type": "Button", "label": "Save and Update", "onClick": "MBW_Update($id);" }
+
+  ],
+    "status":
+    [
+        { "code": 101, "icon": "error", "caption": "Instance created" },
+        { "code": 102, "icon": "active", "caption": "Settings ok" },
+        { "code": 104, "icon": "inactive", "caption": "Update incorrect, check settings" },
+        { "code": 201, "icon": "inactive", "caption": "Module updated, reload data" },
+        { "code": 202, "icon": "error", "caption": "Configuration error" }
+    ]
+}
