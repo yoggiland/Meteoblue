@@ -34,22 +34,22 @@ class SymconMeteoblue extends IPSModule
         // Variables
 		$this->RegisterVariableString("MBW_V_LASTUPDATE", "Last Update");
         $this->RegisterVariableString("MBW_V_PICTOCODEURL", "Wetterpictogramm","~HTMLBox",1);
-        $this->RegisterVariableString("MBW_V_FORECASTHTML", "Vorhersage","~HTMLBox",1);
+        $this->RegisterVariableString("MBW_V_FORECASTHTML", "Forecast","~HTMLBox",1);
         
         $this->RegisterVariableInteger("MBW_V_UVINDEX", "UV Index", "MBW.UVIndex");
         $this->RegisterVariableFloat("MBW_V_TEMPERATURE_MAX", "Temp (max)", "~Temperature");
         $this->RegisterVariableFloat("MBW_V_TEMPERATURE_MIN", "Temp (min)", "~Temperature");
         $this->RegisterVariableFloat("MBW_V_FELTTEMPERATURE_MIN", "Gef. Temp (min)", "~Temperature");
         $this->RegisterVariableFloat("MBW_V_FELTTEMPERATURE_MAX", "Gef. Temp (max)", "~Temperature");
-        $this->RegisterVariableInteger("MBW_V_WINDDIRECTION", "Windrichtung","MBW.WindDirection");
+        $this->RegisterVariableInteger("MBW_V_WINDDIRECTION", "Wind Direction","MBW.WindDirection");
         
 // test 46, 123, 142
-        $this->RegisterVariableFloat("MBW_V_WINDSPEED_MAX", "Wind speed (max)", "~WindSpeed.ms");
-        $this->RegisterVariableFloat("MBW_V_WINDSPEED_MIN", "Wind speed (min)", "~WindSpeed.ms");
-        $this->RegisterVariableFloat("MBW_V_WINDSPEED_MEAN", "Wind speed (mean)", "~WindSpeed.ms");
+        $this->RegisterVariableFloat("MBW_V_WINDSPEED_MAX", "Wind Speed (max)", "~WindSpeed.ms");
+        $this->RegisterVariableFloat("MBW_V_WINDSPEED_MIN", "Wind Speed (min)", "~WindSpeed.ms");
+        $this->RegisterVariableFloat("MBW_V_WINDSPEED_MEAN", "Wind Speed (mean)", "~WindSpeed.ms");
 //
         $this->RegisterVariableInteger("MBW_V_SEALEVELPRESSUREMIN", "Luftdruck (min)");
-        $this->RegisterVariableInteger("MBW_V_SEALEVELPRESSUREMAX", "Luftdruck (max)");
+        $this->RegisterVariableInteger("MBW_V_SEALEVELPRESSUREMAX", "Sealevel Pressure (max)");
         
         
         $this->RegisterTimer("UpdateSymconMeteoblue", $this->ReadPropertyInteger("MBW_UPDATEINTERVALL") * 1000, 'MBW_Update($_IPS[\'TARGET\']);');

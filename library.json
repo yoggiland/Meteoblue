@@ -2,7 +2,7 @@
     "id": "{7DD1B0B4-1E2D-E1FC-8ED1-36144DE903E6}",
     "author": "nik78476",
     "name": "Meteoblue",
-    "url": "git://github.com/yoggiland/SymconMeteoblue.git",
+    "url": "git://github.com/yoggiland/Meteoblue.git",
     "compatibility": {
         "version": "5.0"
     },
