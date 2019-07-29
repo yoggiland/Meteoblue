@@ -39,8 +39,8 @@ class SymconMeteoblue extends IPSModule
         $this->RegisterVariableInteger("MBW_V_UVINDEX", "UV Index", "MBW.UVIndex");
         $this->RegisterVariableFloat("MBW_V_TEMPERATURE_MAX", "Temp (max)", "~Temperature");
         $this->RegisterVariableFloat("MBW_V_TEMPERATURE_MIN", "Temp (min)", "~Temperature");
-        $this->RegisterVariableFloat("MBW_V_FELTTEMPERATURE_MIN", "Gef. Temp (min)", "~Temperature");
-        $this->RegisterVariableFloat("MBW_V_FELTTEMPERATURE_MAX", "Gef. Temp (max)", "~Temperature");
+        $this->RegisterVariableFloat("MBW_V_FELTTEMPERATURE_MIN", "Feels Like Temp (min)", "~Temperature");
+        $this->RegisterVariableFloat("MBW_V_FELTTEMPERATURE_MAX", "Feels Like Temp (max)", "~Temperature");
         $this->RegisterVariableInteger("MBW_V_WINDDIRECTION", "Wind Direction","MBW.WindDirection");
         
 // test 46, 123, 142
@@ -48,8 +48,8 @@ class SymconMeteoblue extends IPSModule
         $this->RegisterVariableFloat("MBW_V_WINDSPEED_MIN", "Wind Speed (min)", "~WindSpeed.ms");
         $this->RegisterVariableFloat("MBW_V_WINDSPEED_MEAN", "Wind Speed (mean)", "~WindSpeed.ms");
 //
-        $this->RegisterVariableInteger("MBW_V_SEALEVELPRESSUREMIN", "Luftdruck (min)");
-        $this->RegisterVariableInteger("MBW_V_SEALEVELPRESSUREMAX", "Sealevel Pressure (max)");
+        $this->RegisterVariableInteger("MBW_V_SEALEVELPRESSUREMIN", "Pressure (min)");
+        $this->RegisterVariableInteger("MBW_V_SEALEVELPRESSUREMAX", "Pressure (max)");
         
         
         $this->RegisterTimer("UpdateSymconMeteoblue", $this->ReadPropertyInteger("MBW_UPDATEINTERVALL") * 1000, 'MBW_Update($_IPS[\'TARGET\']);');
