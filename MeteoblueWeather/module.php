@@ -32,21 +32,21 @@ class SymconMeteoblue extends IPSModule
         
         
         // Variables
-		$this->RegisterVariableString("MBW_V_LASTUPDATE", "Last Update");
-        $this->RegisterVariableString("MBW_V_PICTOCODEURL", "Wetterpictogramm","~HTMLBox",1);
+		$this->RegisterVariableString("MBW_V_LASTUPDATE", "Last update");
+        $this->RegisterVariableString("MBW_V_PICTOCODEURL", "Weather pictogram","~HTMLBox",1);
         $this->RegisterVariableString("MBW_V_FORECASTHTML", "Forecast","~HTMLBox",1);
         
         $this->RegisterVariableInteger("MBW_V_UVINDEX", "UV Index", "MBW.UVIndex");
-        $this->RegisterVariableFloat("MBW_V_TEMPERATURE_MAX", "Temp (max)", "~Temperature");
-        $this->RegisterVariableFloat("MBW_V_TEMPERATURE_MIN", "Temp (min)", "~Temperature");
-        $this->RegisterVariableFloat("MBW_V_FELTTEMPERATURE_MIN", "Feels Like Temp (min)", "~Temperature");
-        $this->RegisterVariableFloat("MBW_V_FELTTEMPERATURE_MAX", "Feels Like Temp (max)", "~Temperature");
-        $this->RegisterVariableInteger("MBW_V_WINDDIRECTION", "Wind Direction","MBW.WindDirection");
+        $this->RegisterVariableFloat("MBW_V_TEMPERATURE_MAX", "Temperature (max)", "~Temperature");
+        $this->RegisterVariableFloat("MBW_V_TEMPERATURE_MIN", "Temperature (min)", "~Temperature");
+        $this->RegisterVariableFloat("MBW_V_FELTTEMPERATURE_MIN", "Temperature feels like (min)", "~Temperature");
+        $this->RegisterVariableFloat("MBW_V_FELTTEMPERATURE_MAX", "Temperature feels like (max)", "~Temperature");
+        $this->RegisterVariableInteger("MBW_V_WINDDIRECTION", "Wind direction","MBW.WindDirection");
         
 // test 46, 123, 142
-        $this->RegisterVariableFloat("MBW_V_WINDSPEED_MAX", "Wind Speed (max)", "~WindSpeed.ms");
-        $this->RegisterVariableFloat("MBW_V_WINDSPEED_MIN", "Wind Speed (min)", "~WindSpeed.ms");
-        $this->RegisterVariableFloat("MBW_V_WINDSPEED_MEAN", "Wind Speed (mean)", "~WindSpeed.ms");
+        $this->RegisterVariableFloat("MBW_V_WINDSPEED_MAX", "Wind speed (max)", "~WindSpeed.ms");
+        $this->RegisterVariableFloat("MBW_V_WINDSPEED_MIN", "Wind speed (min)", "~WindSpeed.ms");
+        $this->RegisterVariableFloat("MBW_V_WINDSPEED_MEAN", "Wind speed (mean)", "~WindSpeed.ms");
 //
         $this->RegisterVariableInteger("MBW_V_SEALEVELPRESSUREMIN", "Pressure (min)");
         $this->RegisterVariableInteger("MBW_V_SEALEVELPRESSUREMAX", "Pressure (max)");
